@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:go_router/go_router.dart';
-import '../api_recipe/app_state_recipes.dart'; // Используйте правильный AppState
+import '../api_recipe/app_state_recipes.dart';
 import '../api_recipe/recipe.dart';
 
 class RecipePage extends StatefulWidget {
@@ -12,12 +12,12 @@ class RecipePage extends StatefulWidget {
 }
 
 class _RecipePageState extends State<RecipePage> {
-  final AppStateRecipes appState = AppStateRecipes(); // Используем AppState для рецептов
+  final AppStateRecipes appState = AppStateRecipes();
 
   @override
   void initState() {
     super.initState();
-    appState.loadRecipes('cake'); // Пример запроса рецептов
+    appState.loadRecipes('cake');
   }
 
   @override
@@ -26,9 +26,9 @@ class _RecipePageState extends State<RecipePage> {
       appBar: AppBar(
         title: const Text('Наши рецепты выпечки'),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Стрелка "Назад"
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            context.go('/'); // Переход на главную страницу
+            context.go('/');
           },
         ),
       ),
@@ -51,7 +51,7 @@ class _RecipePageState extends State<RecipePage> {
                 subtitle: Text(recipe.strInstructions),
                 leading: Image.network(recipe.strMealThumb),
                 onTap: () {
-                  // Открыть подробности рецепта
+
                 },
               );
             },

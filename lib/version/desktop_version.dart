@@ -58,9 +58,9 @@ class DesktopVersionState extends State<DesktopVersion> {
             const SizedBox(height: 20),
             Expanded(
               child: Card(
-                elevation: 5.0, // Добавим тень для эффекта карты
+                elevation: 5.0,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16.0), // Скругление углов
+                  borderRadius: BorderRadius.circular(16.0),
                 ),
                 child: _pages[_selectedIndex],
               ),
@@ -69,10 +69,10 @@ class DesktopVersionState extends State<DesktopVersion> {
         ),
       ),
     bottomNavigationBar: BottomNavigationBar(
-    currentIndex: _selectedIndex, // Текущий выбранный индекс
-    onTap: _onItemTapped, // Обработка выбора вкладки
-    selectedItemColor: Colors.blue, // Цвет выбранной иконки
-    unselectedItemColor: Colors.grey, // Цвет невыбранных иконок
+    currentIndex: _selectedIndex,
+    onTap: _onItemTapped,
+    selectedItemColor: Colors.blue,
+    unselectedItemColor: Colors.grey,
 
     items: const [
     BottomNavigationBarItem(icon: Icon(Icons.menu), label: 'Меню'),

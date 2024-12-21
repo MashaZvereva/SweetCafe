@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart'; // для проверки веб-платформы kIsWeb
+import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sweetcafe/page/recipe_page.dart';
 import 'version/mobile_version.dart';
@@ -10,7 +10,7 @@ import 'page/aboutpage.dart';
 import 'page/contactpage.dart';
 import 'page/promotionspage.dart';
 import 'page/reviewspage.dart';
-import 'dart:io'; // Для использования Platform
+import 'dart:io';
 
 
 void main() {

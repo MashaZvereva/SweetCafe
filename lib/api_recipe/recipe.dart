@@ -15,9 +15,9 @@ class RecipeResponse {
 @JsonSerializable()
 class Recipe {
   final String idMeal;
-  final String strMeal; // Название блюда
-  final String strMealThumb; // URL изображения блюда
-  final String strInstructions; // Инструкции по приготовлению
+  final String strMeal;
+  final String strMealThumb;
+  final String strInstructions;
 
   Recipe({
     required this.idMeal,

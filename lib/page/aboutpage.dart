@@ -10,16 +10,16 @@ class AboutPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('О нас'),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Стрелка "Назад"
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            context.go('/'); // Переход на главную страницу
+            context.go('/');
           },
         ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Добавление картинки из интернета
+
           Image.network(
             'https://i.pinimg.com/1200x/6f/e2/97/6fe297e15779e19a0d4d4a467f4aa878.jpg',
           ),

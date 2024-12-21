@@ -1,6 +1,6 @@
 import 'package:mobx/mobx.dart';
-import 'recipe_service.dart'; // Ваш сервис
-import 'recipe.dart'; // Ваши модели рецептов
+import 'recipe_service.dart';
+import 'recipe.dart';
 
 part 'app_state_recipes.g.dart';
 

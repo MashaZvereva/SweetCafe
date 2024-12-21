@@ -65,9 +65,9 @@ class _ReviewsPageState extends State<ReviewsPage> {
       appBar: AppBar(
         title: const Text('Отзывы'),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Стрелка "Назад"
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            context.go('/'); // Переход на главную страницу
+            context.go('/');
           },
         ),
       ),

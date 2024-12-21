@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mobx/mobx.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:flutter/services.dart'; // Импортируем нужный пакет
-import '../mobx/app_state.dart'; // Путь к файлу с состоянием
+import 'package:flutter/services.dart';
+import '../mobx/app_state.dart';
 
 class PromotionsPage extends StatefulWidget {
   const PromotionsPage({super.key});
@@ -33,9 +33,9 @@ class _PromotionsPageState extends State<PromotionsPage> {
           content: TextField(
             controller: controller,
             decoration: const InputDecoration(hintText: 'Название акции'),
-            keyboardType: TextInputType.text, // Поддержка ввода текста
-            textInputAction: TextInputAction.done, // Завершение ввода
-            inputFormatters: [FilteringTextInputFormatter.deny(RegExp('[\\0-9]'))], // Опционально, если нужно запретить ввод цифр
+            keyboardType: TextInputType.text,
+            textInputAction: TextInputAction.done,
+            inputFormatters: [FilteringTextInputFormatter.deny(RegExp('[\\0-9]'))],
           ),
           actions: [
             TextButton(
@@ -60,7 +60,7 @@ class _PromotionsPageState extends State<PromotionsPage> {
   @override
   void initState() {
     super.initState();
-    appState.loadPromotions(); // Загрузка акций при инициализации страницы
+    appState.loadPromotions();
   }
 
   @override
@@ -69,9 +69,9 @@ class _PromotionsPageState extends State<PromotionsPage> {
       appBar: AppBar(
         title: const Text('Акции'),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Стрелка "Назад"
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            context.go('/'); // Переход на главную страницу
+            context.go('/');
           },
         ),
       ),

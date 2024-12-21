@@ -10,16 +10,16 @@ class ContactPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Контакты'),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Стрелка "Назад"
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            context.go('/'); // Переход на главную страницу
+            context.go('/');
           },
         ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Добавление картинки из интернета
+
           Image.network(
             'https://www.softmagazin.ru/upload/pictures/Konsultacii-Zadat-vopros-auditory-6-Softmagazin.jpg',
           ),

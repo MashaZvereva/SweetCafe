@@ -10,13 +10,6 @@ class MobileVersion extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Sweet Cafe - Mobile'),
         centerTitle: true,
-        // Убираем стрелку "Назад", удаляя этот блок:
-        // leading: IconButton(
-        //   icon: const Icon(Icons.arrow_back),
-        //   onPressed: () {
-        //     context.go('/'); // Переход на главную страницу
-        //   },
-        // ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

@@ -37,14 +37,14 @@ class _MenuPageState extends State<MenuPage> {
     setState(() {
       menuItems.add(item);
     });
-    _saveMenuItems(); // Сохранить меню после добавления
+    _saveMenuItems();
   }
 
   void _removeMenuItem(String item) {
     setState(() {
       menuItems.remove(item);
     });
-    _saveMenuItems(); // Сохранить меню после удаления
+    _saveMenuItems();
   }
 
   void _showAddMenuItemDialog() {
@@ -84,9 +84,9 @@ class _MenuPageState extends State<MenuPage> {
       appBar: AppBar(
         title: const Text('Меню'),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Стрелка "Назад"
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            context.go('/'); // Возврат на предыдущую страницу
+            context.go('/');
           },
         ),
       ),
